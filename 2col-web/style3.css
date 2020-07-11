@@ -1,0 +1,95 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;            /* good*/
+}
+body{
+background-color: cadetblue;        /* good*/
+}
+.wrapper{
+  margin: 0px 200px;                    /* good*/
+}
+.header>h1{
+  font-family: cursive;
+  font-size: 50px;
+  color: rgb(65, 65, 158);
+  background-color: rgb(247, 245, 243);
+}
+
+.main-nav>ul{                        /* good*/
+background-color:grey;              /* good*/
+list-style: none;                       /* good*/
+padding-left: 40px;                      /* good*/
+}
+.main-nav>ul>li{                            /* good*/
+  display: inline-block;
+  padding: 20px;
+}
+.main-nav>ul>li>a{                             /* good*/
+  color: antiquewhite;
+  text-decoration: none;
+  font-family: cursive;
+}
+.main-nav>ul>li:hover{                               /* good*/
+  background-color: rgb(27, 6, 6);
+}
+.main-nav>ul>li>a:hover{
+  color: rgb(209, 186, 238);                       /* good*/
+}
+.content{
+  min-height: 500px;                                 /* good*/
+  float: left;                                       /* good*/
+  width: 80%;                                        /* good*/
+  padding: 10px;
+  background-color: rgb(247, 245, 243);
+}
+
+.content>img{
+  display: block;                                  /* good*/
+  width: 80%;      /*jitna width ka original image hai uska 80% na ki screen size ka */
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
+}
+.right-sidebar{
+  border-left:solid chocolate 1px;
+  min-height: 697px;
+  width: 20%;                   /* good*/
+  float: right;                /* good*/
+  padding: 3px;
+  background-color: rgb(247, 245, 243);
+}
+  
+  /* margin-top: 3px; */
+
+.right-sidebar>p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(247, 245, 243);
+}
+.right-sidebar>h2{
+  font-family: cursive;
+  background-color: blue;
+  text-align: center;
+  color: antiquewhite;
+  border-top-right-radius: 20px;       /* good*/
+}
+.container::after{                      /* good*/
+content: " ";
+display: block;
+clear: both;
+}
+.footer{
+  background-color: rgb(85, 8, 8);
+  text-align: center;
+  font-family: cursive;
+  height: 30px;
+  color: aqua;
+}
+.footer>a{                                /* good*/
+  color: azure;                            /* good*/
+  text-decoration: none;
+}
+footer>a:hover{                           /* good*/
+  background-color: rgb(15, 4, 4);
+  color: brown;                              /* good*/
+}

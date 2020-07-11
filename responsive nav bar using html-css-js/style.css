@@ -1,0 +1,91 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.container{
+  /* border: 5px solid black; */
+}
+.navbar,.navbar-mob{
+  background-color: darkolivegreen;
+}
+.navbar>a{
+color: white;
+text-decoration: none;
+font-size: 41px;
+padding: 10px 10px 10px 70px;
+float: left;
+}
+.navbar>ul{
+  list-style: none;
+  float: right;
+}
+.navbar-mob>ul{
+  list-style: none;
+}
+.navbar>ul>li{
+  display: inline-block;
+  line-height: 40px;              /*important*/
+  padding: 30px;                 /*isi k karan 5 link k bech duri bna*/
+}
+.navbar-mob>ul>li{
+  line-height: 30px;
+  padding: 0px 20px;
+}
+.navbar>ul>li>a,
+.navbar-mob>ul>li>a{
+  text-decoration: none;
+  font-size: 22px;
+  color: rgb(203, 221, 120);
+}
+.navbar>ul>li:hover,.navbar-mob>ul>li:hover{    /*ye ni smajh aaya*/
+  background-color: grey;
+  color: black;
+}
+.navbar>ul>li:last-child{  /*last child likhne ka tarika yad rkho*/
+  padding-right: 30px;
+}
+.navbar::after{
+  content: ' ';
+  display: block;
+  clear: both;
+  *zoom: 1;
+}
+.navbar-mob, .hamburger-btn{   /*isko default bnaye desktop k lye*/
+  display: none;
+}
+@media screen and (max-width:700px){
+  .navbar-mob, .hamburger-btn{                            /*important*/
+    display: block;
+  }
+  .navbar>ul{
+    display:none;  /*taki jab mobile display ho tab desktop display na dikhai de hma*/
+  }
+}   /*mtlb ye sari chiz kam kregi jab 700px ayega tab*/
+#mob-menu{
+  display: none; /*phle by default menu bar mobile me dikhai deta tha but ab ye ni dega*/
+}
+.hamburger-btn>.fa-times{
+  display: none;  /*phle by default cross ka nisan dikhai deta tha ab ni dega   sirf bar ka notation reh jyga*/
+}
+.fa-bars,.fa-times{
+  position: absolute;      /* ab ham iske position ko set kar skte hai   upar niche dye baye*/
+  top: 20px;
+  right: 20px; /*right side se 20px hoke apne aap dikhaye dega*/
+  font-size: 30px;
+}
+ /* .fa-times{
+  position: absolute; /* ab ham iske position ko set kar skte hai upar niche dye baye*/
+  /* top: 20px;
+  right: 20px; /*right side se 20px hoke apne aap dikhaye dega*/
+  /* font-size: 30px;  */ */
+
+ .fa-bars{
+   z-index: 1;
+ }
+ .fa-times{
+  z-index: 2;
+}
+
+
+  

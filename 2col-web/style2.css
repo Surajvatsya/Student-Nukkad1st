@@ -1,0 +1,31 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.header{
+  background-color: steelblue;
+  border: solid blue 5px;
+  height: 70px;
+}
+.container{
+  border: solid red 5px;
+  font-size: 20px;
+}
+.childcontainer{
+  background-color: rgb(83, 201, 248);
+  border: solid blueviolet 2px;
+  width: 20%;
+  margin: 5px;
+float: left;
+height: 400px;
+}
+.container::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.foter{
+  background-color: saddlebrown;
+  height: 30px;
+  border:solid seagreen 5px;
+}

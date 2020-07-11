@@ -1,0 +1,170 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: grey;          /*important*/
+}
+.container{
+  margin-left: auto;               /*important*/
+  margin-right: auto;
+  width: 1000px;
+  /* border: solid red 5px; */
+  margin-bottom: 10px;
+}
+nav{
+  background-color: #089de3;
+}
+  nav>a{
+    color: rgb(237, 234, 240);
+font-size: 30px;
+text-decoration: none;
+padding:10px 30px ;
+float: left;
+  }
+  .navbar>ul{
+    list-style: none;    /*ye 2no chiz ul k andr rkho yad rkho*/
+    float: right;
+  }
+  nav::after{
+    content: ' ';
+    display: block;
+    clear: both;
+    *zoom: 1;
+  }
+  .navbar>ul>li{
+    display: inline-block;   /*ul-li uske andar inline block*/
+    /* text-decoration: none; */
+line-height: 60px;
+padding-left: 30px; /*ye v imp hai since ye krne se nav bar k beech me space aata hau*/
+padding-right: 30px;          /* padding: 0px 30px;*/
+  }
+  .navbar>ul>li:last-child{         /*important*/
+    padding-right: 100px;
+  }
+  .navbar>ul>li>a{
+    text-decoration: none;
+    font-size: 20px;
+    color: ivory;
+    
+  }
+  .navbar>ul>li>a:hover{
+    background-color: darkblue;
+    color: yellow;
+  }
+  .main-banner{
+    height: 300px;     /*1 chota sa container ban gya jisme ye image banega    rem:- hmesha inside element k sath hi tag ko likha kro*/
+  }
+  .main-banner>img{
+    width: 100%;    /* % ka best use yha pe kiya gya hai aur yha pe     kiya kro important hai*/
+    height: 300px;    /* image apna pura ka pura container le liya smjha*/
+    object-fit: cover;
+    }
+    .service{
+      background-color: white;         /*important*/
+      padding-top: 100px;
+    }
+    .service>h1{
+      text-align: center;
+      font-size: 30px;
+    }
+    /* ab yha se 3 alag alag col ka web design hoga 1 sath likhe 3no ka ho jayga*/
+    .col{
+      width:300px;     /*important*/ 
+      margin-left: 20px;    
+    /* ab 300*3= 900px ho gya total container ka aur 100px chod dya hmne padding vgehra ke liya. jo text faila hua tha pure page pe 3no ka vo  simat kar ab 300px ke andar aa jayga */
+      border-right: solid red 1px;
+    text-align: center;  
+    /* 300px ke aNDAR HI text center higa*/
+    padding: 30px;
+    float: left;       /*important*/
+    /* ye 3no services section se bahar nikal gya float k use k bad*/
+
+    }
+    section::after{
+      content: ' ';
+      display: block;
+      clear: both;
+
+    }
+    section{
+      height: 400px;
+    }
+  .col:last-child{
+    border-right:none;          /*important*/
+  }
+  .col>h3{
+    padding: 10px;
+    color: rgb(44, 14, 14);
+  }
+  .col>p{
+    padding-bottom: 10px;
+  }
+  .col>a{
+    color: whitesmoke;
+    text-decoration:none;
+    font-size: 21px;
+    background-color:#089de3 ;
+    border: solid white 2px; /*important*/
+    border-radius: 20px;   /*important*/
+    padding: 5px 10px; /*important*/
+
+  }
+  .col>a:hover{
+    background-color: darkblue;
+    border: solid black 3px;   /*important*/
+  }
+  .customer{
+    background-color:#089de3 ;
+    min-height: 200px;
+    text-align: center;
+  }
+  .customer>h1{
+  font-size: 40px;
+  font-family: cursive;
+  padding-bottom: 3px;
+  color: bisque;
+  padding-bottom:20px 0px 30px 0px;
+  }
+  .customer>img{     /*image ko hmesha isi treh se access kro*/
+border: solid 2px;
+width: 100px;           /*ye 4 step imp hai circle image create krne k lye height width dono same hona chahye*/
+height: 100px;
+border-radius: 50px;
+object-fit: cover;
+/* padding: 0px 30px; */
+  }
+  .customer>p{
+    font-size: 20px;
+    margin: 10px;
+    padding-bottom: 40px;
+    line-height: 25px;
+    color: white;
+  }
+  .customer>a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    border: solid white 1px;
+    /* padding: 5px 20px; */
+    margin-bottom: 30px;
+    border-radius: 30px;
+    padding: 10px;
+  }
+  .customer>a:hover{
+    background-color: darkblue;
+    border:solid black 1px;
+  }
+  .footer{
+    background-color: black;
+    text-align: center;
+
+  }.footer>small{
+    color: white;
+    padding: 20px;
+  }
+  .footer>small>a{
+    color: whitesmoke;
+  }
+
